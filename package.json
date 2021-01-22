@@ -1,0 +1,41 @@
+{
+  "name": "rbk7-mvp",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel client --out-dir public --presets @babel/preset-react --source-maps inline --watch",
+    "bundle": "rollup -c",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hend-isleem/rbk7-mvp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hend-isleem/rbk7-mvp/issues"
+  },
+  "homepage": "https://github.com/hend-isleem/rbk7-mvp#readme",
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/preset-react": "^7.6.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "rollup": "^1.26.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.19.4",
+    "supertest": "^4.0.2"
+  },
+  "description": ""
+}
